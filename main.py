@@ -16,15 +16,9 @@ def send_message(phone_number, message):
     os.system('osascript send.scpt {} "{}"'.format(phone_number, message))
 
 if __name__ == '__main__':
-    # words = get_words('miracle.txt')
-    # for word in words:
-    #     send_message(config.TEAMMATE3, word)
-
-
-    text = get_lines('alanwalker.txt')
-    for line in text:
-        send_message(config.FRIEND2, line)
-
-    # send_message(config.FRIEND3, 'ELOOOOOOOOOOON MUSK')
-    # send_message(config.FRIEND2, 'blah blahblah blah blahblahblah blah blah')
-    # send_message(config.FRIEND1, 'awpidjkasdfpaiwjesdfkl')
+    # put your phone number into the string! 
+    # if your number is (123)456-7890, the next line should look like this: phone_number = '1234567890'
+    phone_number = ''
+    words = get_words('miracle.txt')
+    for word in words:
+        send_message(phone_number, word)
