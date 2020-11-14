@@ -1,5 +1,4 @@
 import os
-import config
 
 def get_words(file_path):
     with open(file_path, 'r') as f:
